@@ -1,0 +1,139 @@
+.card{
+  box-shadow: 2px 2px 2px 2px #ccc;
+  width: 50rem;
+  border-radius: 10px;
+  padding:3rem;
+  text-align: center;
+  margin:20px auto;
+  font-size: 2rem;
+}
+
+button{
+  background-color: blueviolet !important;
+  color: #fff;
+  border-radius: 5px;
+  padding:5px;
+  margin: 10px;
+  font-size: 1rem;border:0
+}
+
+input{
+  border:1px solid #333 !important;
+  padding:5px;
+  border-radius:5px;
+  display:block;
+  margin-bottom:10px;
+  width:50%;
+  font-size: 16px;
+  margin:10px auto;
+}
+.nav{
+  background-color: blueviolet;
+  display:flex;
+  justify-content: space-between;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  
+}
+.nav ul {
+  display: flex;
+  padding:15px;
+  justify-content: flex-end;
+  gap:2rem;
+  align-items: center;
+}
+.nav ul a{
+  color: #fff;
+}
+
+h1{font-weight: bold;text-align: left;}
+.cartContainer{
+  display: flex;
+  justify-content: space-between;
+}
+.d-flex{
+  display:flex;
+  text-align:left;
+}
+.flex-column{
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-top:15px;
+}
+.flex-column span:last-child{
+  font-weight:bold;
+}
+.flex-column span i{
+  font-size: 1rem;
+}
+.buttnCart{
+  text-align:right;
+  margin-top:15px;
+}
+.buttnCart span{
+  border:2px solid #333;
+  padding:5px 15px;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius:5px;
+  line-height: 30px;
+  font-size:1.5rem;
+}
+.space-between{
+  justify-content:space-between;
+  align-items: center;
+}
+
+.cartBtn{
+display: block;
+margin-left: auto;
+padding:10px;
+
+
+}
+
+.price{
+  font-size:1.5rem;
+}
+
+.cartContainerFluid{
+  width: auto;
+  border-radius:0;
+  padding:0;
+  margin:0;
+  box-shadow: none;
+}
+
+.cartMainContainer{
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  background-color: #fff;
+  position: absolute;
+  width: 50rem;
+    border-radius: 10px;
+    padding: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    z-index: 1;
+
+}
+.bg{
+  background-color: rgba(0,0,0, .5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+.modalCart{
+  border-bottom:2px solid #333;
+  padding-bottom: 20px;
+}
+ul{list-style: none;}
