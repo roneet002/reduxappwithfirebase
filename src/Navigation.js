@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { AuthAction } from "./store/AuthStore";
 import CartButton from "./CartButton";
+import { NavLink } from "react-router-dom";
 
 
 const Navigation = () => {
@@ -21,16 +22,16 @@ const dispatch = useDispatch();
         </span>
         <ul>
           <li>
-            <a href="/">Home</a>
+          <NavLink to={'/'} className={({isActive})=>isActive ? 'isActive' : ''} end>Home</NavLink>
           </li>
           <li>
-            <a href="/Aboutus">About Us</a>
+          <NavLink to={'Aboutus'} className={({isActive})=>isActive ? 'isActive' : ''}>About Us</NavLink>
           </li>
           <li>
-            <a href="/Products">Product Us</a>
+          <NavLink to={'Events'} className={({isActive})=>isActive ? 'isActive' : ''}>Events</NavLink>
           </li>
           <li>
-            <a href="/Service">Service</a>
+          <NavLink to={'Service'} className={({isActive})=>isActive ? 'isActive' : ''}>Service</NavLink>
           </li>
           <li>
             <CartButton />
@@ -38,7 +39,7 @@ const dispatch = useDispatch();
           </li>
           {loginState ?
             <li>
-              <a href="/" onClick={logoutHandler}>Logout</a>
+               <NavLink to={'/'} onClick={logoutHandler} className={({isActive})=>isActive ? 'isActive' : ''}>Logout</NavLink>
             </li>
             : ''
           }
