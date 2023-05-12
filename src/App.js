@@ -7,6 +7,7 @@ import EventDetails from "./Pages/EventDetails";
 import EditEvent from "./Pages/EditEvent";
 import NewEvent from "./Pages/NewEvent";
 import Service from "./Pages/Service";
+import ErrorPage from "./Pages/ErrorPage";
 import RouteLayout from "./Route";
 import EventsRootLayout from './Pages/EventsRoot';
 
@@ -25,10 +26,10 @@ const Router = createBrowserRouter([
   {path:'new',element : <NewEvent />},
   {path:':eventsId/edit',element : <EditEvent />},
   ]},
-  
   {path:'Service',element : <Service />},
   {path:'Service/:id',element : <Service />},
-]}
+],
+errorElement : <ErrorPage />}
 
 ])
 
